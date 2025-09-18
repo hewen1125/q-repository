@@ -4,7 +4,7 @@
 
 ## 📊 评分分布
 
-- **S级 (23-25分)**: 1个项目
+- **S级 (23-25分)**: 2个项目
 - **A级 (20-22分)**: 0个项目
 - **B级 (17-19分)**: 0个项目
 - **C级 (14-16分)**: 0个项目
@@ -13,7 +13,23 @@
 
 ## 🏆 S级项目 (23-25分) - 极度推荐
 
-### 1. Microsoft MarkItDown - 23分
+### 1. OpenAI Codex CLI - 25分
+- **GitHub**: https://github.com/openai/codex
+- **评分**: 25/25
+- **标签**: `⭐⭐⭐⭐⭐ 五星推荐` `🔥 热门项目` `🚀 官方出品`
+- **语言**: JavaScript/TypeScript
+- **Stars**: 42,300+
+- **简介**: OpenAI官方开发的轻量级AI编程助手，在终端中本地运行，支持代码读写和运行
+- **详情**: [查看详细信息](../categories/development-tools/openai-codex.md)
+
+**评分详情**:
+- 代码质量: 5/5 ⭐⭐⭐⭐⭐
+- 文档质量: 5/5 ⭐⭐⭐⭐⭐
+- 社区活跃度: 5/5 ⭐⭐⭐⭐⭐
+- 实用性: 5/5 ⭐⭐⭐⭐⭐
+- 创新性: 5/5 ⭐⭐⭐⭐⭐
+
+### 2. Microsoft MarkItDown - 23分
 - **GitHub**: https://github.com/microsoft/markitdown
 - **评分**: 23/25
 - **标签**: `⭐⭐⭐⭐⭐ 五星推荐` `🔥 热门项目` `🚀 快速发展`
@@ -49,7 +65,7 @@
 ## 📈 评分趋势
 
 ### 平均分变化
-- 2025-09-18: 23.0分 (基于1个项目)
+- 2025-09-18: 24.0分 (基于2个项目)
 
 ### 质量分布
 - 优秀项目比例: 100% (S级)
@@ -59,9 +75,11 @@
 ## 🎯 评分亮点
 
 ### 满分项目 (单项5分)
-- **代码质量满分**: [MarkItDown](../categories/development-tools/markitdown.md)
-- **社区活跃度满分**: [MarkItDown](../categories/development-tools/markitdown.md)
-- **实用性满分**: [MarkItDown](../categories/development-tools/markitdown.md)
+- **代码质量满分**: [OpenAI Codex CLI](../categories/development-tools/openai-codex.md), [MarkItDown](../categories/development-tools/markitdown.md)
+- **文档质量满分**: [OpenAI Codex CLI](../categories/development-tools/openai-codex.md)
+- **社区活跃度满分**: [OpenAI Codex CLI](../categories/development-tools/openai-codex.md), [MarkItDown](../categories/development-tools/markitdown.md)
+- **实用性满分**: [OpenAI Codex CLI](../categories/development-tools/openai-codex.md), [MarkItDown](../categories/development-tools/markitdown.md)
+- **创新性满分**: [OpenAI Codex CLI](../categories/development-tools/openai-codex.md)
 
 ### 高分项目 (单项4分及以上)
 - **文档质量4分**: [MarkItDown](../categories/development-tools/markitdown.md)
