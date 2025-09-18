@@ -1,0 +1,58 @@
+# GitHub Pages 配置
+title: "GitHub 优秀项目精选"
+description: "精心收集和评价的优秀开源项目，助力开发者发现有价值的工具和库"
+baseurl: ""
+url: "https://hewen1125.github.io/q-repository"
+author: "wenki"
+
+# Jekyll 配置
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# 导航菜单
+header_pages:
+  - index.md
+  - categories.md
+  - by-language.md
+  - by-stars.md
+  - featured.md
+
+# 集合配置
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name/
+
+# 默认值配置
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# 站点设置
+markdown: kramdown
+highlighter: rouge
+sass:
+  style: compressed
+
+# SEO 设置
+lang: zh-CN
+timezone: Asia/Shanghai
+
+# 社交链接
+social:
+  github: https://github.com/hewen1125
+  email: hewen1125@hotmail.com
+
+# 分析统计 (可选)
+# google_analytics: UA-XXXXXXXX-X

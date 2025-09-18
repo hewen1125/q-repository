@@ -1,0 +1,381 @@
+---
+layout: default
+---
+
+<article class="project-detail">
+  <header class="project-header">
+    <div class="project-title-section">
+      <h1 class="project-title">{{ page.title }}</h1>
+      {% if page.rating %}
+      <div class="project-rating">
+        <span class="rating-score">{{ page.rating }}/25</span>
+        <div class="rating-stars">
+          {% assign rating_percent = page.rating | times: 20 %}
+          <div class="stars-bg">★★★★★</div>
+          <div class="stars-fill" style="width: {{ rating_percent }}%">★★★★★</div>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+    
+    {% if page.description %}
+    <p class="project-description">{{ page.description }}</p>
+    {% endif %}
+    
+    <div class="project-meta">
+      {% if page.github_url %}
+      <a href="{{ page.github_url }}" class="meta-link github" target="_blank">
+        <span class="icon">⭐</span>
+        <span>GitHub</span>
+      </a>
+      {% endif %}
+      
+      {% if page.website %}
+      <a href="{{ page.website }}" class="meta-link website" target="_blank">
+        <span class="icon">🌐</span>
+        <span>Website</span>
+      </a>
+      {% endif %}
+      
+      {% if page.language %}
+      <span class="meta-item language">
+        <span class="icon">💻</span>
+        <span>{{ page.language }}</span>
+      </span>
+      {% endif %}
+      
+      {% if page.stars %}
+      <span class="meta-item stars">
+        <span class="icon">⭐</span>
+        <span>{{ page.stars }}</span>
+      </span>
+      {% endif %}
+      
+      {% if page.category %}
+      <span class="meta-item category">
+        <span class="icon">📂</span>
+        <span>{{ page.category }}</span>
+      </span>
+      {% endif %}
+    </div>
+    
+    {% if page.tags %}
+    <div class="project-tags">
+      {% for tag in page.tags %}
+      <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </header>
+
+  <div class="project-content">
+    {{ content }}
+  </div>
+
+  <footer class="project-footer">
+    <div class="navigation-links">
+      <a href="{{ site.baseurl }}/" class="nav-link">← 返回首页</a>
+      <a href="{{ site.baseurl }}/categories/" class="nav-link">浏览分类</a>
+      <a href="{{ site.baseurl }}/featured/" class="nav-link">精选推荐 →</a>
+    </div>
+    
+    <div class="share-section">
+      <h3>分享这个项目</h3>
+      <div class="share-buttons">
+        <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ site.url }}{{ page.url }}" 
+           class="share-btn twitter" target="_blank">Twitter</a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}" 
+           class="share-btn linkedin" target="_blank">LinkedIn</a>
+        <button onclick="copyUrl()" class="share-btn copy">复制链接</button>
+      </div>
+    </div>
+  </footer>
+</article>
+
+<style>
+.project-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.project-header {
+  border-bottom: 2px solid #e1e4e8;
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+
+.project-title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.project-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #24292e;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.project-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rating-score {
+  background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.rating-stars {
+  position: relative;
+  font-size: 1.2rem;
+}
+
+.stars-bg {
+  color: #ddd;
+}
+
+.stars-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffd700;
+  overflow: hidden;
+}
+
+.project-description {
+  font-size: 1.2rem;
+  color: #586069;
+  line-height: 1.6;
+  margin: 1.5rem 0;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.meta-link, .meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.meta-link {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.meta-link.github {
+  background: #24292e;
+  color: white;
+}
+
+.meta-link.github:hover {
+  background: #0366d6;
+  transform: translateY(-2px);
+}
+
+.meta-link.website {
+  background: #0366d6;
+  color: white;
+}
+
+.meta-link.website:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+.meta-item {
+  background: #f1f3f4;
+  color: #24292e;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.tag {
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.project-content {
+  line-height: 1.7;
+  color: #24292e;
+  margin-bottom: 3rem;
+}
+
+.project-content h2 {
+  color: #24292e;
+  border-bottom: 1px solid #e1e4e8;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.project-content h3 {
+  color: #0366d6;
+  margin-top: 1.5rem;
+}
+
+.project-content code {
+  background: #f6f8fa;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+.project-content pre {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.project-content blockquote {
+  border-left: 4px solid #0366d6;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  color: #586069;
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 0 6px 6px 0;
+}
+
+.project-footer {
+  border-top: 2px solid #e1e4e8;
+  padding-top: 2rem;
+  margin-top: 3rem;
+}
+
+.navigation-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: #0366d6;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid #0366d6;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background: #0366d6;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.share-section {
+  text-align: center;
+}
+
+.share-section h3 {
+  color: #24292e;
+  margin-bottom: 1rem;
+}
+
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.share-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.share-btn.twitter {
+  background: #1da1f2;
+}
+
+.share-btn.linkedin {
+  background: #0077b5;
+}
+
+.share-btn.copy {
+  background: #28a745;
+}
+
+.share-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+  .project-detail {
+    padding: 1rem;
+  }
+  
+  .project-title {
+    font-size: 2rem;
+  }
+  
+  .project-title-section {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .project-meta {
+    justify-content: center;
+  }
+  
+  .navigation-links {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .share-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+
+<script>
+function copyUrl() {
+  navigator.clipboard.writeText(window.location.href).then(function() {
+    alert('链接已复制到剪贴板！');
+  }, function(err) {
+    console.error('复制失败: ', err);
+  });
+}
+</script>

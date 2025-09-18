@@ -1,8 +1,28 @@
-# GitHub 优秀项目收集整理
+# GitHub 优秀项目精选
 
-## 📁 目录结构说明
+> 🚀 [在线浏览](https://yourusername.github.io/github-awesome-projects) | 📚 精心收集和评价的优秀开源项目
 
-本项目用于收集、整理和评价GitHub上的优秀开源项目，帮助开发者发现有价值的工具和库。
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-在线浏览-blue?style=flat-square&logo=github)](https://yourusername.github.io/github-awesome-projects)
+[![项目数量](https://img.shields.io/badge/项目数量-2-green?style=flat-square)](#)
+[![平均评分](https://img.shields.io/badge/平均评分-24.0%2F25-gold?style=flat-square)](#)
+[![最后更新](https://img.shields.io/badge/最后更新-2025--09--18-lightgrey?style=flat-square)](#)
+
+## 🌐 在线访问
+
+本项目已部署到 GitHub Pages，支持在线浏览：
+
+- **主站地址**: https://yourusername.github.io/github-awesome-projects
+- **响应式设计**: 支持桌面端和移动端访问
+- **搜索功能**: 支持项目名称、语言、标签搜索
+- **分类浏览**: 多维度分类导航系统
+
+### 🎯 网站特性
+- ✨ 现代化的响应式设计
+- 🔍 实时搜索和筛选功能
+- 📊 项目数据可视化展示
+- 🏷️ 多维度标签分类系统
+- 📱 移动端友好的用户界面
+- ⚡ 静态站点，访问速度快
 
 ### 分类体系
 
@@ -71,6 +91,91 @@ github/
 
 ## 🚀 快速开始
 
+### 🌐 在线浏览
+直接访问 [GitHub Pages 站点](https://yourusername.github.io/github-awesome-projects)
+
+### 📱 本地运行
+如果想在本地运行站点：
+
+```bash
+# 克隆仓库
+git clone https://github.com/yourusername/github-awesome-projects.git
+cd github-awesome-projects
+
+# 安装 Jekyll 和依赖
+bundle install
+
+# 本地运行
+bundle exec jekyll serve
+
+# 浏览器访问 http://localhost:4000
+```
+
+### 📚 直接浏览
 1. 浏览 `featured/` 目录查看精选项目
 2. 根据需求在 `categories/` 中寻找相关项目
 3. 查看 `index/all-projects.md` 获取完整项目列表
+
+## 🛠️ GitHub Pages 部署
+
+本项目已经优化了 GitHub Pages 支持，包含以下特性：
+
+### 🏧 技术架构
+- **Jekyll**: 静态站点生成器
+- **Minima 主题**: 简洁现代的设计
+- **响应式布局**: 支持多种屏幕尺寸
+- **GitHub Actions**: 自动化部署流程
+
+### 📁 项目结构
+```
+github-awesome-projects/
+├── _config.yml          # Jekyll 配置
+├── _layouts/            # 页面布局模板
+├── _includes/           # 可复用组件
+├── assets/              # 静态资源
+│   ├── css/style.scss   # 自定义样式
+│   └── js/main.js       # JavaScript 功能
+├── index.md             # 首页
+├── categories.md        # 分类页面
+├── by-language.md       # 语言分类
+├── by-stars.md          # 热度排序
+├── featured.md          # 精选推荐
+├── .github/workflows/   # CI/CD 配置
+└── Gemfile              # Ruby 依赖管理
+```
+
+### 🚀 部署步骤
+
+1. **Fork 本仓库** 到你的 GitHub 账户
+
+2. **启用 GitHub Pages**
+   - 进入仓库设置 (Settings)
+   - 找到 "Pages" 选项
+   - Source 选择 "GitHub Actions"
+
+3. **修改配置**
+   编辑 `_config.yml` 文件：
+   ```yaml
+   url: "https://your-username.github.io/github-awesome-projects"
+   title: "你的项目名称"
+   description: "你的项目描述"
+   ```
+
+4. **推送代码**
+   ```bash
+   git add .
+   git commit -m "Configure GitHub Pages"
+   git push origin main
+   ```
+
+5. **等待部署**
+   - GitHub Actions 会自动构建和部署
+   - 通常需要 2-5 分钟
+   - 部署完成后可通过 URL 访问
+
+### 🔧 自定义配置
+
+- **修改主题样式**: 编辑 `assets/css/style.scss`
+- **添加新功能**: 修改 `assets/js/main.js`
+- **调整布局**: 编辑 `_layouts/` 下的模板文件
+- **更新导航**: 修改 `_config.yml` 中的 `header_pages`
