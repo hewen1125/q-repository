@@ -114,7 +114,13 @@ Jekyll 支持热重载，修改文件后会自动重新构建页面。
 - 确保所有 Markdown 文件的 Front Matter 格式正确
 - 查看 Actions 标签页的错误日志
 
-**2. 页面显示异常**
+**2. CSS/JS 文件 404 错误**
+- 确保 `assets/main.scss` 文件存在且有正确的 Front Matter (以 `---` 开头)
+- 检查 `_config.yml` 中的 `baseurl` 配置是否与仓库名一致
+- 确保 JavaScript 文件在 `assets/js/main.js` 位置
+- 检查是否正确使用 `{{ '/assets/main.css' | relative_url }}` 语法
+
+**3. 页面显示异常**
 - 检查 CSS 文件是否有语法错误
 - 确保图片链接路径正确
 - 验证 JavaScript 代码是否有错误

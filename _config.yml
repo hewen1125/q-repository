@@ -1,7 +1,7 @@
 # GitHub Pages 配置
 title: "GitHub 优秀项目精选"
 description: "精心收集和评价的优秀开源项目，助力开发者发现有价值的工具和库"
-baseurl: ""
+baseurl: "/q-repository" # 仓库名称
 url: "https://hewen1125.github.io/q-repository"
 author: "wenki"
 

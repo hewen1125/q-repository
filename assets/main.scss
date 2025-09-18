@@ -330,3 +330,112 @@ table td {
 table tr:hover {
   background: #f8f9fa;
 }
+
+/* 搜索结果样式 */
+.search-results-container {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.search-result-item {
+  padding: 1.5rem;
+  border-bottom: 1px solid #e1e4e8;
+  transition: all 0.3s ease;
+}
+
+.search-result-item:hover {
+  background: #f8f9fa;
+  transform: translateX(5px);
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.result-header h4 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.result-header a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.result-header a:hover {
+  text-decoration: underline;
+}
+
+.result-rating {
+  background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.result-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.result-language {
+  background: #f1f3f4;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+.result-stars {
+  color: #666;
+  font-weight: 500;
+}
+
+.result-desc {
+  color: #586069;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.result-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.result-tag {
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.result-tag.ai { background: #f3e5f5; color: #7b1fa2; }
+.result-tag.development { background: #e3f2fd; color: #1976d2; }
+.result-tag.official { background: #e8f5e8; color: #2e7d32; }
+.result-tag.hot { background: #fff3e0; color: #f57c00; }
+.result-tag.utility { background: #fff8e1; color: #f9a825; }
+.result-tag.trending { background: #fce4ec; color: #c2185b; }
+
+.no-results {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
