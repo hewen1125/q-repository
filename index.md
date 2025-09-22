@@ -80,9 +80,9 @@ description: "精心收集和评价的优秀开源项目，助力开发者发现
     <h3><a href="categories.html">📂 按功能分类</a></h3>
     <p>开发工具、AI/ML、数据处理等功能类别</p>
     <ul class="category-list">
-      <li><a href="categories/development-tools/">开发工具 (2)</a></li>
-      <li><a href="categories/ai-ml/">AI与机器学习</a></li>
-      <li><a href="categories/data-processing/">数据处理</a></li>
+      <li><a href="{{ 'categories/development-tools/' | relative_url }}">开发工具 (2)</a></li>
+      <li><a href="{{ 'categories/ai-ml/' | relative_url }}">AI与机器学习</a></li>
+      <li><a href="{{ 'categories/data-processing/' | relative_url }}">数据处理</a></li>
     </ul>
   </div>
 
@@ -90,9 +90,9 @@ description: "精心收集和评价的优秀开源项目，助力开发者发现
     <h3><a href="by-language.html">💻 按编程语言</a></h3>
     <p>Python、JavaScript、Go、Rust等语言分类</p>
     <ul class="category-list">
-      <li><a href="by-language/javascript/">JavaScript/TypeScript (1)</a></li>
-      <li><a href="by-language/python/">Python (1)</a></li>
-      <li><a href="by-language/go/">Go</a></li>
+      <li><a href="{{ 'by-language/javascript/' | relative_url }}">JavaScript/TypeScript (1)</a></li>
+      <li><a href="{{ 'by-language/python/' | relative_url }}">Python (1)</a></li>
+      <li><a href="{{ 'by-language/go/' | relative_url }}">Go</a></li>
     </ul>
   </div>
 
