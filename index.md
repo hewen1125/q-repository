@@ -150,5 +150,5 @@ description: "精心收集和评价的优秀开源项目，助力开发者发现
 ---
 
 <p class="footer-note">
-  📝 想要推荐项目？欢迎 <a href="https://github.com/yourusername/github-awesome-projects/issues">提交 Issue</a> 或 <a href="https://github.com/yourusername/github-awesome-projects/pulls">发起 PR</a>
+  📝 想要推荐项目？欢迎 <a href="https://github.com/hewen1125/q-repository/issues">提交 Issue</a> 或 <a href="https://github.com/hewen1125/q-repository/pulls">发起 PR</a>
 </p>

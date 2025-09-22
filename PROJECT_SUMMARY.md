@@ -158,6 +158,6 @@ bundle exec jekyll serve
 
 你现在拥有了一个功能完善、设计精美的 GitHub 项目展示网站！这个网站不仅能帮助其他开发者发现优秀项目，也展示了你对开源社区的贡献和技术品味。
 
-**网站链接**: `https://your-username.github.io/your-repo-name`
+**网站链接**: `https://hewen1125.github.io/q-repository`
 
 开始你的开源项目收集之旅吧！🚀

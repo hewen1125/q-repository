@@ -306,10 +306,10 @@ permalink: /featured/
     <h3>🤝 项目推荐</h3>
     <p>发现了优秀的开源项目？欢迎推荐给我们！</p>
     <div class="submission-methods">
-      <a href="https://github.com/yourusername/github-awesome-projects/issues" class="submit-btn">
+      <a href="https://github.com/hewen1125/q-repository/issues" class="submit-btn">
         📝 提交Issue
       </a>
-      <a href="https://github.com/yourusername/github-awesome-projects/pulls" class="submit-btn">
+      <a href="https://github.com/hewen1125/q-repository/pulls" class="submit-btn">
         🔄 发起PR
       </a>
     </div>

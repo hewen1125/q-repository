@@ -17,15 +17,15 @@
 
 ```yaml
 # 修改为你的 GitHub 用户名和仓库名
-url: "https://your-username.github.io/your-repo-name"
+url: "https://hewen1125.github.io/q-repository"
 title: "你的项目标题"
 description: "你的项目描述"
 author: "你的名字"
 
 # 修改社交链接
 social:
-  github: your-username
-  email: your-email@example.com
+  github: hewen1125
+  email: hewen1125@hotmail.com
 ```
 
 ### 4. 推送代码
@@ -44,7 +44,7 @@ git push origin main
 ### 6. 访问网站
 部署完成后，你可以通过以下 URL 访问你的网站：
 ```
-https://your-username.github.io/your-repo-name
+https://hewen1125.github.io/q-repository
 ```
 
 ## 🛠️ 自定义配置

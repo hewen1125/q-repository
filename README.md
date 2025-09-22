@@ -1,8 +1,8 @@
 # GitHub 优秀项目精选
 
-> 🚀 [在线浏览](https://yourusername.github.io/github-awesome-projects) | 📚 精心收集和评价的优秀开源项目
+> 🚀 [在线浏览](https://hewen1125.github.io/q-repository) | 📚 精心收集和评价的优秀开源项目
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-在线浏览-blue?style=flat-square&logo=github)](https://yourusername.github.io/github-awesome-projects)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-在线浏览-blue?style=flat-square&logo=github)](https://hewen1125.github.io/q-repository)
 [![项目数量](https://img.shields.io/badge/项目数量-2-green?style=flat-square)](#)
 [![平均评分](https://img.shields.io/badge/平均评分-24.0%2F25-gold?style=flat-square)](#)
 [![最后更新](https://img.shields.io/badge/最后更新-2025--09--18-lightgrey?style=flat-square)](#)
@@ -11,7 +11,7 @@
 
 本项目已部署到 GitHub Pages，支持在线浏览：
 
-- **主站地址**: https://yourusername.github.io/github-awesome-projects
+- **主站地址**: https://hewen1125.github.io/q-repository
 - **响应式设计**: 支持桌面端和移动端访问
 - **搜索功能**: 支持项目名称、语言、标签搜索
 - **分类浏览**: 多维度分类导航系统
@@ -92,15 +92,15 @@ github/
 ## 🚀 快速开始
 
 ### 🌐 在线浏览
-直接访问 [GitHub Pages 站点](https://yourusername.github.io/github-awesome-projects)
+直接访问 [GitHub Pages 站点](https://hewen1125.github.io/q-repository)
 
 ### 📱 本地运行
 如果想在本地运行站点：
 
 ```bash
 # 克隆仓库
-git clone https://github.com/yourusername/github-awesome-projects.git
-cd github-awesome-projects
+git clone https://github.com/hewen1125/q-repository.git
+cd q-repository
 
 # 安装 Jekyll 和依赖
 bundle install
@@ -128,7 +128,7 @@ bundle exec jekyll serve
 
 ### 📁 项目结构
 ```
-github-awesome-projects/
+q-repository/
 ├── _config.yml          # Jekyll 配置
 ├── _layouts/            # 页面布局模板
 ├── _includes/           # 可复用组件
@@ -156,7 +156,7 @@ github-awesome-projects/
 3. **修改配置**
    编辑 `_config.yml` 文件：
    ```yaml
-   url: "https://your-username.github.io/github-awesome-projects"
+   url: "https://hewen1125.github.io/q-repository"
    title: "你的项目名称"
    description: "你的项目描述"
    ```
